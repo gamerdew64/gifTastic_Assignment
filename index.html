@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Giftastic Animation Assignment</title>
+  <!-- Google Fonts -->
+  <!-- Link to custom Google Fonts to make the text more unique -->
+  <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <!-- This is a div that conains the loading screen gif -->
+  <div id="loader">
+      <img src="assets/images/basketballLoading.gif" width="100%">
+  </div>
+
+  <div id="musicGroup">
+    <audio id="musicToggle" autoplay="autoplay" controls="controls">
+       <source src="assets/sounds/alanParsonsProject-Sirius.mp3"/>
+   </audio>
+ </div>
+
+  <div id="teamButtons"></div>
+
+  <form id="team-form">
+    <label for="team-input">Add a team!</label>
+    <input type="text" id="team-input"><br>
+    <input id="addTeam" type="submit" value="Submit"><br>
+  </form>
+
+  <div id="gifsDiv"></div>
+
+<script type="text/javascript" src="assets/javascript/script.js"></script>
+</body>
+</html>

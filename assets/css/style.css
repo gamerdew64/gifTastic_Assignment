@@ -1,0 +1,135 @@
+/* This is the styling of the input form in which the user adds NBA teams to the array */
+#team-form {
+  text-align: right;
+  padding-right: 15%;
+  padding-top: 5%;
+}
+
+/* This is the styling of the loading gif */
+#loader img
+{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* This is regarding the position of the music controller */
+#musicGroup
+{
+  float:right;
+  position: fixed;
+  bottom: 15px;
+  right: 0;
+}
+
+#musicToggle
+{
+  float: right;
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+}
+
+#gifsDiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#gifsDiv > div {
+  width: 33%;
+}
+
+/* Giving a max width to all the gifs that load on the page so as to ensure that the gifs don't overlap into each other when the screen moves */
+#gifsDiv img {
+  max-width: 100%;
+}
+
+/* This is the styling for what is essentially the background of the page (which cycyles through several different images) */
+/* Since we placed several additional divs within the body, they will function as the layer on top of the body - making this the background */
+body
+{
+  background: #4169E1;
+  animation: color-me-in 45s; /* time it takes for the complete animation to complete */
+  animation-iteration-count: 25; /* will continue for roughly 15 minutes or so */
+}
+
+/* Giving a specific Google Font to the buttons on the page */
+button
+{
+  font-family: 'Play', sans-serif;
+}
+
+label {
+  color: #fff;
+  text-shadow: /* This adds an black colored shadow effect to the words on the page to make them better stand out against the background */
+    3px 3px 0 #000000,
+  -1px -1px 0 #000000,
+   1px -1px 0 #000000,
+   -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+}
+
+/* Start background animation section*/
+@keyframes color-me-in
+{
+  /* Starts with base color --- step 1 */
+  0%
+  {
+    background: #5199A8;
+  }
+  /* Begins transition to next color at 10% */
+  10%
+  {
+    background: #07A3B2;
+  }
+  /* Begins transition to next color at 20% */
+  20%
+  {
+    background: #055F65;
+  }
+  /* Begins transition to next color at 30% */
+  30%
+  {
+    background: #400479;
+  }
+  /* Begins transition to next color at 40% */
+  40%
+  {
+    background: #8E3843;
+  }
+  /* Begins transition to next color at 50% */
+  50%
+  {
+    background: #134913;
+  }
+  /* Begins transition to next color at 60% */
+  60%
+  {
+    background: #E9B704;
+  }
+  /* Begins transition to next color at 70% */
+  70%
+  {
+    background: #82486B;
+  }
+  /* Begins transition to next color at 80% */
+  80%
+  {
+    background: #FFCCFF;
+  }
+  /* Begins transition to next color at 90% */
+  90%
+  {
+    background: #134913;
+  }
+  /* Begins transition to next color at 100% and completes sequence --- step 4 */
+  100%
+  {
+    background: #FFFFCC;
+  }
+}
